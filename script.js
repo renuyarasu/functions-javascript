@@ -3,12 +3,15 @@
 // this keyword
 // To be little clearer: the 'this' keyword reference the object its was called against
 
-// Immediately Invoked Function Expression - IIFE
+// Callback Functions
 
-/* (function () {
-    console.log('You have Invoked me!');
-})() */
+function name(x, callBack) {
+    console.log('Renu');
+    console.log(x);
+    callBack();
+}
+function company() {
+    console.log('innRoad');
+}
 
-(function (name) {
-    console.log(`${name}, You have Invoked me!` );
-})('Renu')
+name('Hello', company);
