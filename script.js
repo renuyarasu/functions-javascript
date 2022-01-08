@@ -1,19 +1,12 @@
-// Javascript: Comparison with the Strict Equality Operator
+// Javascript: Comparison with the Logical Operator
 console.clear();
 
-/* function testEquality(val) {
-    if (val === 10) {
-        return 'Equal';
+function testGreaterThan(val) {
+    if (val > 100) {
+        return 'Over 100'
     }
-    return 'Not Equal';
-}
-console.log(testEquality('10')); */
-
-function comparisonEquality(a, b) {
-    if (a === b) {
-        return 'Equal';
+    if (val > 10) {
+        return 'Over 10'
     }
-    return 'Not Equal';
 }
-
-console.log(comparisonEquality(10, "10"));
+console.log(testGreaterThan(5000));
