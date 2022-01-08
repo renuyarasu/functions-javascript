@@ -1,9 +1,13 @@
-// Javascript: Comparison with the Logical Operator
+// Javascript: Else If Statements
 console.clear();
 
-function testGreaterThan(val) {
-    if (val <= 100 || val >= 10) {
-        return 'YES!'
+function testElse(val) {
+    if (val > 5) {
+        return "Bigger"
+    } else if (val < 5) {
+        return "Small"
+    } else {
+        return "Equal"
     }
 }
-console.log(testGreaterThan(99));
+console.log(testElse(5));
