@@ -1,15 +1,15 @@
-// Javascript: Declarations and Expressions
+// Javascript: Array - Stand in Line
 console.clear();
 
-// function declaration
-function sayHi(firstName) {
-    return `Hi ${firstName}`
+function nextInLine(arr, item) {
+    arr.push(item)
+    return arr.shift()
 }
-console.log(sayHi('Renu'));
 
-// function expression
+let testArr = [1, 2, 3, 4, 5];
 
-const squareMe = function square(x) {
-    return x * x;
-}
-console.log(squareMe(20));
+console.log('Before: ' + JSON.stringify(testArr));
+
+console.log(nextInLine(testArr, 6));
+
+console.log('After: ' + JSON.stringify(testArr));
