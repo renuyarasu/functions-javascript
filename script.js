@@ -2,11 +2,8 @@
 console.clear();
 
 function testGreaterThan(val) {
-    if (val >= 100) {
-        return '100 or over'
-    }
-    if (val >= 10) {
-        return '10 or over'
+    if (val <= 100 && val >= 10) {
+        return 'YES!'
     }
 }
-console.log(testGreaterThan(100));
+console.log(testGreaterThan(99));

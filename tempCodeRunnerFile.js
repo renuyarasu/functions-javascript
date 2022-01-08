@@ -1,4 +1,1 @@
-function cool() {
-    const pizza = 'Wwww!!';
-}
-const pizza = cool();
+99
