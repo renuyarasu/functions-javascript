@@ -2,7 +2,7 @@
 console.clear();
 
 function testGreaterThan(val) {
-    if (val <= 100 && val >= 10) {
+    if (val <= 100 || val >= 10) {
         return 'YES!'
     }
 }
