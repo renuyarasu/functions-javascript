@@ -1,23 +1,26 @@
-// Javascript: Golf Game Code
+// Javascript: Switch statement
+
 console.clear();
 
-let names = ['Hole-in-one!', 'Eagle', 'Birdie', 'Par', 'Bogey', 'Double Bogey', 'Go Home!']
+function caseInSwitch(val) {
+    let answer = 'No results found!';
+    switch (val) {
+        case 1:
+            answer = 'Alpha'
+            break;
 
-function golfScore(par, strokes) {
-    if (strokes == 2) {
-        return names[0]
-    } else if (strokes <= par - 2) {
-        return names[1]
-    } else if (strokes == par - 1) {
-        return names[2]
-    } else if (strokes == par) {
-        return names[3]
-    } else if (strokes == par + 1) {
-        return names[4]
-    } else if (strokes == par + 2) {
-        return names[5]
-    } else if (strokes >= par + 3) {
-        return names[6]
+        case 2:
+            answer = "Beta"
+            break;
+
+        case 3:
+            answer = 'Gama'
+            break;
+
+        case 4:
+            answer = 'Delta'
+            break;
     }
+    return answer
 }
-console.log(golfScore(5, 10));
+console.log(caseInSwitch(30));
