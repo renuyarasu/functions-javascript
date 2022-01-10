@@ -1,16 +1,10 @@
-// Javascript: Returning Boolean Values from Functions
+// Javascript: Return Early Pattern for Functions
 console.clear();
 
-/* function isLess(a, b) {
-    if (a < b) {
-        return true
-    } else {
-        return false
+function abTest(a, b) {
+    if (a < 0 || b < 0) {
+        return undefined;
     }
-} */
-
-function isLess(a, b) {
-    return a < b;
+    // return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2))
 }
-
-console.log(isLess(4, -4));
+console.log(abTest(-2, 2));
