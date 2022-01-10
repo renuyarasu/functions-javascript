@@ -1,24 +1,28 @@
-// Javascript: Switch statement - Default option
+// Javascript: Multiple Identical Options in Switch Statements
 
 console.clear();
 
-function switchOfAlphabet(val) {
-    let answer = "No results found!";
+function sequentialSizes(val) {
+    let answer = "";
     switch (val) {
-        case 'A':
-            answer = 'Apple';
+        case 1:
+        case 2:
+        case 3:
+            answer = 'Low';
             break;
-        case 'B':
-            answer = 'Ball';
-            break;
-        case 'C':
-            answer = 'Cat';
-            break;
-        default:
-            answer = 'Stuff';
-            break
 
+        case 4:
+        case 5:
+        case 6:
+            answer = 'Med';
+            break;
+
+        case 7:
+        case 8:
+        case 9:
+            answer = 'High';
+            break;
     }
     return answer
 }
-console.log(switchOfAlphabet('B'));
+console.log(sequentialSizes(6));
