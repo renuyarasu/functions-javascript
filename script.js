@@ -1,40 +1,16 @@
-// Javascript: Replacing If Else Chains with Switch
+// Javascript: Returning Boolean Values from Functions
 console.clear();
 
-function chainToSwitch(val) {
-    let answer = "";
-
-    switch (val) {
-        case 1:
-            answer = 'One';
-            break;
-        case 2:
-            answer = 'Two';
-            break;
-        case 3:
-            answer = 'Three';
-            break;
-        case 4:
-            answer = 'Four';
-            break;
-        case 5:
-            answer = 'Five';
-            break;
-
-        default:
-            break;
+/* function isLess(a, b) {
+    if (a < b) {
+        return true
+    } else {
+        return false
     }
+} */
 
-    /* if (val === 1) {
-        answer = 'One';
-    } else if (val === 2) {
-        answer = 'Two';
-    } else if (val === 3) {
-        answer = 'Three';
-    } else if (val === 4) {
-        answer = 'Four';
-    } */
-    return answer;
+function isLess(a, b) {
+    return a < b;
 }
 
-console.log(chainToSwitch(5));
+console.log(isLess(4, -4));
