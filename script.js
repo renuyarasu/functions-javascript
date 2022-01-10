@@ -1,26 +1,24 @@
-// Javascript: Switch statement
+// Javascript: Switch statement - Default option
 
 console.clear();
 
-function caseInSwitch(val) {
-    let answer = 'No results found!';
+function switchOfAlphabet(val) {
+    let answer = "No results found!";
     switch (val) {
-        case 1:
-            answer = 'Alpha'
+        case 'A':
+            answer = 'Apple';
             break;
+        case 'B':
+            answer = 'Ball';
+            break;
+        case 'C':
+            answer = 'Cat';
+            break;
+        default:
+            answer = 'Stuff';
+            break
 
-        case 2:
-            answer = "Beta"
-            break;
-
-        case 3:
-            answer = 'Gama'
-            break;
-
-        case 4:
-            answer = 'Delta'
-            break;
     }
     return answer
 }
-console.log(caseInSwitch(30));
+console.log(switchOfAlphabet('B'));
