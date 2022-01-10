@@ -1,13 +1,21 @@
-// Javascript: Else If Statements
+// Javascript: Chaining If else statements
 console.clear();
 
-function testElse(val) {
-    if (val > 5) {
-        return "Bigger"
-    } else if (val < 5) {
-        return "Small"
-    } else {
-        return "Equal"
+function testSize(num) {
+    if (num < 5) {
+        return 'Tiny'
+    }
+    if (num < 10) {
+        return 'Small'
+    }
+    if (num < 15) {
+        return 'Medium'
+    }
+    if (num < 20) {
+        return 'Large'
+    }
+    if (num >= 20) {
+        return 'Huge'
     }
 }
-console.log(testElse(5));
+console.log(testSize(50));
