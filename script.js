@@ -1,28 +1,40 @@
-// Javascript: Multiple Identical Options in Switch Statements
-
+// Javascript: Replacing If Else Chains with Switch
 console.clear();
 
-function sequentialSizes(val) {
+function chainToSwitch(val) {
     let answer = "";
+
     switch (val) {
         case 1:
+            answer = 'One';
+            break;
         case 2:
+            answer = 'Two';
+            break;
         case 3:
-            answer = 'Low';
+            answer = 'Three';
             break;
-
         case 4:
+            answer = 'Four';
+            break;
         case 5:
-        case 6:
-            answer = 'Med';
+            answer = 'Five';
             break;
 
-        case 7:
-        case 8:
-        case 9:
-            answer = 'High';
+        default:
             break;
     }
-    return answer
+
+    /* if (val === 1) {
+        answer = 'One';
+    } else if (val === 2) {
+        answer = 'Two';
+    } else if (val === 3) {
+        answer = 'Three';
+    } else if (val === 4) {
+        answer = 'Four';
+    } */
+    return answer;
 }
-console.log(sequentialSizes(6));
+
+console.log(chainToSwitch(5));
