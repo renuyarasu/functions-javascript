@@ -1,4 +1,4 @@
-// Javascript: Accessing Objects Properties with the Dot Operator
+// Javascript: Accessing Objects Properties with the Bracket Notation
 console.clear();
 
 let testObj = {
@@ -6,5 +6,5 @@ let testObj = {
     'two': 2,
     'three': 3
 }
-let oneVal = testObj.one;
-let play = console.log(oneVal);
+let twoVal = testObj["two"];
+console.log(twoVal);
