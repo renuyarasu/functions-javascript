@@ -1,10 +1,10 @@
-// Javascript: Return Early Pattern for Functions
+// Javascript: Accessing Objects Properties with the Dot Operator
 console.clear();
 
-function abTest(a, b) {
-    if (a < 0 || b < 0) {
-        return undefined;
-    }
-    // return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2))
+let testObj = {
+    'one': 1,
+    'two': 2,
+    'three': 3
 }
-console.log(abTest(-2, 2));
+let oneVal = testObj.one;
+let play = console.log(oneVal);
