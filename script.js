@@ -1,10 +1,10 @@
-// Javascript: Accessing Objects Properties with the Bracket Notation
+// Javascript: Accessing Objects Properties with Variables
 console.clear();
 
 let testObj = {
-    'one': 1,
-    'two': 2,
-    'three': 3
+    1: 'one',
+    2: 'two',
+    3: 'three',
 }
-let twoVal = testObj["two"];
-console.log(twoVal);
+let playerNum = 3;
+let player = console.log(testObj[playerNum]);
