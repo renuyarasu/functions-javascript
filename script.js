@@ -1,11 +1,24 @@
 // Javascript: Updating Object Properties
 console.clear();
 
-let dog = {
-    name: 'Snoophy',
-    age: 10,
-    legs: 4
-}
-delete dog.age
+function numberLookups(val) {
+    let result = '';
 
-console.log(dog.age);
+    let lookup = {
+        1: 'One',
+        2: 'Two',
+        3: 'Three',
+        4: 'Four',
+        5: 'Five',
+        6: 'Six',
+        7: 'Seven',
+        8: 'Eight',
+        9: 'Nine',
+        10: 'TEN'
+    };
+
+    result = lookup[val];
+    return result;
+}
+
+console.log(numberLookups(7));
