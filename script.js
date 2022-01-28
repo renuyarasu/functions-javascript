@@ -1,18 +1,18 @@
 // Javascript: Updating Object Properties
 console.clear();
 
-let myObj = {
-    name: 'VedaGna',
-    age: 5,
-    sib: 'Sister'
-}
-
-function checkObj(checkProp) {
-    if (myObj.hasOwnProperty(checkProp)) {
-        return myObj[checkProp]
-    } else {
-        return 'Not Found!'
+let myStorage = {
+    car: {
+        inside: {
+            gloveBox: 'Maps',
+            passengerSeat: 'Crumbs'
+        },
+        outside: {
+            trunk: 'Jack'
+        }
     }
-}
+};
 
-console.log(checkObj('sib'));
+// let gloveBoxContent = myStorage.car.inside.gloveBox;
+let gloveBoxContent = myStorage.car.inside['gloveBox']; // Maps
+console.log(gloveBoxContent);
