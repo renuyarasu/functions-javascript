@@ -1,18 +1,16 @@
 // Javascript: Updating Object Properties
 console.clear();
 
-let myStorage = {
-    car: {
-        inside: {
-            gloveBox: 'Maps',
-            passengerSeat: 'Crumbs'
-        },
-        outside: {
-            trunk: 'Jack'
-        }
+let myGarden = [
+    {
+        type: 'Flower',
+        list: ['Rose', 'Lily', 'Tulip', 'Orchid', 'Carnation', 'Hyacinth', 'PeruvianLily', 'Chrysanthemum']
+    },
+    {
+        type: 'Trees',
+        list: ['Vepa', "Fir", 'Pine', 'Fabaceae', 'Labernum', 'CoralTree']
     }
-};
+]
 
-// let gloveBoxContent = myStorage.car.inside.gloveBox;
-let gloveBoxContent = myStorage.car.inside['gloveBox']; // Maps
-console.log(gloveBoxContent);
+let findCoralTree = myGarden[1].list[5]
+console.log(findCoralTree);
