@@ -1,10 +1,11 @@
-// Javascript: Accessing Objects Properties with Variables
+// Javascript: Updating Object Properties
 console.clear();
 
-let testObj = {
-    1: 'one',
-    2: 'two',
-    3: 'three',
+let dog = {
+    name: 'Snoophy',
+    age: 10,
+    legs: 4
 }
-let playerNum = 3;
-let player = console.log(testObj[playerNum]);
+delete dog.age
+
+console.log(dog.age);
