@@ -1,9 +1,9 @@
 // Javascript: Updating Object Properties
 console.clear();
 
-let myArray = [];
-
-for (let i = 19; i > 0; i -= 2) {
-    myArray.push(i)
+let myArray = [10, 20, 30, 40, 50];
+let total = 0;
+for (let i = 0; i < myArray.length; i++) {
+    total += myArray[i];
 }
-console.log(myArray);
+console.log(total); //150
