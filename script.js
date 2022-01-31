@@ -2,10 +2,7 @@
 console.clear();
 
 let myArray = [];
-let i = 0;
-
-while (i < 10) {
+for (let i = 0; i < 10; i++) {
     myArray.push(i);
-    i++;
 }
 console.log(myArray);
