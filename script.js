@@ -1,9 +1,18 @@
-// Javascript: Updating Object Properties
+// Javascript: Nesting For Loops
 console.clear();
 
-let myArray = [10, 20, 30, 40, 50];
-let total = 0;
-for (let i = 0; i < myArray.length; i++) {
-    total += myArray[i];
+function multiplyAll(arr) {
+    let product = 1;
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            product *= arr[i][j];
+
+        }
+    }
+    return product;
 }
-console.log(total); //150
+
+let product = multiplyAll([[1, 2], [3, 4,], [5, 6, 7]]);
+
+console.log(product);
