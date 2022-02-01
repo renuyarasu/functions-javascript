@@ -1,8 +1,23 @@
 // Javascript: parseInt Function with a Radix
 console.clear();
 
-function convertToInteger(str) {
-    return parseInt(str, 2);
+/* function checkEqual(a, b) {
+    if (a === b) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-let result = convertToInteger('10011');
+ */
+
+
+function checkEqual(a, b) {
+    return a === b ? true : false;
+}
+
+// Arrow function expressions
+// let checkEqual = (a, b) => a === b ? true : false;
+
+let result = checkEqual(5, 5);
 console.log(result);
