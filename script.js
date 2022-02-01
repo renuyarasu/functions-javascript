@@ -1,9 +1,7 @@
-// Javascript: parseInt Function with a Radix
+// Javascript: Difference Between var and let
 console.clear();
 
-function checkSign(num) {
-    return num > 0 ? 'Positive' : num < 0 ? 'Negative' : 'Zero'
-}
+let animal = 'Cat';
+animal = 'Dog';
 
-let result = checkSign(0);
-console.log(result);
+console.log(animal);
