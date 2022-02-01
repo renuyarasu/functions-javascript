@@ -1,9 +1,8 @@
-// Javascript: Generate Random Whole Numbers within a Range
+// Javascript: parseInt Function with a Radix
 console.clear();
 
 function convertToInteger(str) {
-    return parseInt(str);
+    return parseInt(str, 2);
 }
-let result = convertToInteger('55');
-
+let result = convertToInteger('10011');
 console.log(result);
