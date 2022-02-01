@@ -1,7 +1,7 @@
-// Javascript: Generate Random Fractions
+// Javascript: Generate Random Whole Numbers
 console.clear();
 
-function randomFractions() {
-    return Math.random();
+function randomWholeNumbers() {
+    return Math.floor(Math.random() * 10);
 }
-console.log(randomFractions());
+console.log(randomWholeNumbers());
