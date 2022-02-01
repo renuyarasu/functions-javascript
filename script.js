@@ -1,7 +1,9 @@
-// Javascript: Generate Random Whole Numbers
+// Javascript: Generate Random Whole Numbers within a Range
 console.clear();
 
-function randomWholeNumbers() {
-    return Math.floor(Math.random() * 10);
+function convertToInteger(str) {
+    return parseInt(str);
 }
-console.log(randomWholeNumbers());
+let result = convertToInteger('55');
+
+console.log(result);
