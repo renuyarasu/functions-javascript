@@ -1,23 +1,9 @@
 // Javascript: parseInt Function with a Radix
 console.clear();
 
-/* function checkEqual(a, b) {
-    if (a === b) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
- */
-
-
-function checkEqual(a, b) {
-    return a === b ? true : false;
+function checkSign(num) {
+    return num > 0 ? 'Positive' : num < 0 ? 'Negative' : 'Zero'
 }
 
-// Arrow function expressions
-// let checkEqual = (a, b) => a === b ? true : false;
-
-let result = checkEqual(5, 5);
+let result = checkSign(0);
 console.log(result);
