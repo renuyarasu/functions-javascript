@@ -1,11 +1,12 @@
-// Javascript: Arrow Functions with Parameters
+// Javascript: Higher Order Arrow Functions
 console.clear();
 
-/* let myConcat = function (a, b) {
-    return a.concat(b);
-} */
 
-let myConcat = (a, b) => a.concat(b);
+const increment = (function () {
+    return function increment(number, value = 1) {
+        return number + value;
+    }
+})();
 
-let result = myConcat([1, 2], [3, 4, 5]);
-console.log(result);
+console.log(increment(2, 6));
+console.log(increment(2));
