@@ -1,19 +1,16 @@
-// Javascript: Prevent Object Mutation
+// Javascript: Use Arrow Functions to write  Concise Anonymous Functions
 console.clear();
-"use strict"
 
-function freezeObj() {
-    const MATH_CONSTANTS = {
-        PI: 3.14
-    };
-    // Object.freeze(MATH_CONSTANTS); // 3.14
-
-    try {
-        MATH_CONSTANTS.PI = 99;
-    } catch (ex) {
-        console.log(ex);
-    }
-    return MATH_CONSTANTS.PI;
+/* let magic = function () {
+    return new Date()
 }
-const PI = freezeObj();
-console.log(PI);
+ */
+// Arrow Functions 
+
+/* let magic = () => {
+    return new Date()
+} */
+// Arrow Functions Short
+
+let magic = () => new Date()
+console.log(magic());
