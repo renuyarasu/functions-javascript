@@ -1,16 +1,11 @@
-// Javascript: Use Arrow Functions to write  Concise Anonymous Functions
+// Javascript: Arrow Functions with Parameters
 console.clear();
 
-/* let magic = function () {
-    return new Date()
-}
- */
-// Arrow Functions 
-
-/* let magic = () => {
-    return new Date()
+/* let myConcat = function (a, b) {
+    return a.concat(b);
 } */
-// Arrow Functions Short
 
-let magic = () => new Date()
-console.log(magic());
+let myConcat = (a, b) => a.concat(b);
+
+let result = myConcat([1, 2], [3, 4, 5]);
+console.log(result);
