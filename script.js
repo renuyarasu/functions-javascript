@@ -1,15 +1,23 @@
-// Javascript: Write Concise object Literal Declarations Using Simple Fields
+// Javascript: Write Concise Declarative Functions
+'use strict';
 console.clear();
 
-/* const person = (name, age, gender) => {
-    return {
-        name: name,
-        age: age,
-        gender: gender,
-    };
+/* 
+
+const cycle = {
+    gear: 2,
+    setGear: function (newGear) {
+        this.gear = newGear;
+    }
 }; */
 
-const person = (name, age, gender) => ({ name, age, gender })
+// ShortHand
+const cycle = {
+    gear: 2,
+    setGear(newGear) {
+        this.gear = newGear;
+    }
+};
 
-console.log(person('VedaGna', 5, 'Male')); // { name: 'VedaGna', age: 5, gender: 'Male' }
-
+cycle.setGear(3);
+console.log(cycle.gear); //3
