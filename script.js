@@ -1,24 +1,14 @@
-// Javascript: Destructuring Assignment - Assign Variables from Objects
+// Javascript: Destructuring Assignment - Nested Objects
 console.clear();
 
-let voxel = { x: 10, y: 20, z: 30 };
-let x = voxel.x;
-let y = voxel.y;
-let z = voxel.z;
-
-const { x: a, y: b, z: c } = voxel;
-// console.log(a, b, c); // 10 20 30
-
-
-const AVG_TEMPERATURES = {
-    today: 77.5,
-    tomorrow: 79.5
+const LOCAL_FORECAST = {
+    today: { min: 50, max: 100 },
+    tomorrow: { min: 100, max: 200 },
 };
 
-function getTempOfTomorrow(avgTemperatures) {
-    "use strict";
-    // const tempOfTomorrow = undefined;
-    const { tomorrow: tempOfTomorrow } = avgTemperatures;
-    return tempOfTomorrow;
+function getMaxOfTomorrow(forecast) {
+    'use strict';
+    const { tomorrow: { max: maxOfTomorrow } } = forecast;
+    return maxOfTomorrow;
 }
-console.log(getTempOfTomorrow(AVG_TEMPERATURES)); // 79.5
+console.log(getMaxOfTomorrow(LOCAL_FORECAST)); // 200
