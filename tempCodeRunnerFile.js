@@ -1,3 +1,3 @@
-function checkEqual(a, b) {
-    return a === b ? true : false;
-}
+ num[0] = 2;
+    num[1] = 4;
+    num[2] = 6;
