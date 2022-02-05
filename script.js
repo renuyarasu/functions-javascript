@@ -1,12 +1,24 @@
-// Javascript: Use Spread Operator to Evaluate Arrays In-Place
+// Javascript: Destructuring Assignment - Assign Variables from Objects
 console.clear();
 
-const arr1 = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
-let arr2;
-(function () {
-    // arr2 = arr1; //Change this line // [ 'VedaGna', 'Feb', 'Mar', 'Apr', 'May' ]
-    arr2 = [...arr1] // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May' ]
-    arr1[0] = 'VedaGna'
-})();
-console.log(arr2);
+let voxel = { x: 10, y: 20, z: 30 };
+let x = voxel.x;
+let y = voxel.y;
+let z = voxel.z;
 
+const { x: a, y: b, z: c } = voxel;
+// console.log(a, b, c); // 10 20 30
+
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79.5
+};
+
+function getTempOfTomorrow(avgTemperatures) {
+    "use strict";
+    // const tempOfTomorrow = undefined;
+    const { tomorrow: tempOfTomorrow } = avgTemperatures;
+    return tempOfTomorrow;
+}
+console.log(getTempOfTomorrow(AVG_TEMPERATURES)); // 79.5
