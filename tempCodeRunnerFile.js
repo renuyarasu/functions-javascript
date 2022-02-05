@@ -1,1 +1,1 @@
-max
+stats
