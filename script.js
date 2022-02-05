@@ -1,22 +1,12 @@
-// Javascript: Use Rest Operator with Function Parameters
+// Javascript: Use Spread Operator to Evaluate Arrays In-Place
 console.clear();
 
-
-/* const sum = (function () {
-    return function sum(x, y, z) {
-        const args = [x, y, z];
-        return args.reduce((a, b) => a + b, 0)
-    };
+const arr1 = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+let arr2;
+(function () {
+    // arr2 = arr1; //Change this line // [ 'VedaGna', 'Feb', 'Mar', 'Apr', 'May' ]
+    arr2 = [...arr1] // [ 'Jan', 'Feb', 'Mar', 'Apr', 'May' ]
+    arr1[0] = 'VedaGna'
 })();
- */
+console.log(arr2);
 
-// with Rest Operator 
-const sum = (function () {
-    return function sum(...args) {
-        return args.reduce((a, b) => a + b, 0)
-    }
-})();
-
-
-
-console.log(sum(1, 2, 3, 4, 5));
