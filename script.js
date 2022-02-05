@@ -2,18 +2,16 @@
 'use strict';
 console.clear();
 
-/* let SpaceShuttle = function (targetPlanet) {
-    this.targetPlanet = targetPlanet;
-}
-
-let zeus = new SpaceShuttle('Jupiter');
-console.log(zeus.targetPlanet); // Jupiter
- */
-class SpaceShuttle {
-    constructor(targetPlanet) {
-        this.targetPlanet = targetPlanet;
+function makeClass() {
+    class Vegetable {
+        constructor(name) {
+            this.name = name;
+        }
     }
+    return Vegetable;
 }
+const Vegetable = makeClass();
 
-let zeus = new SpaceShuttle('Jupiter');
-console.log(zeus.targetPlanet); // Jupiter
+const carrot = new Vegetable('carrot')
+
+console.log(carrot.name); // carrot
