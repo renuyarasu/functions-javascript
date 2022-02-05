@@ -1,23 +1,19 @@
-// Javascript: Write Concise Declarative Functions
+// Javascript: Use class Syntax to define a Constructor Function
 'use strict';
 console.clear();
 
-/* 
+/* let SpaceShuttle = function (targetPlanet) {
+    this.targetPlanet = targetPlanet;
+}
 
-const cycle = {
-    gear: 2,
-    setGear: function (newGear) {
-        this.gear = newGear;
+let zeus = new SpaceShuttle('Jupiter');
+console.log(zeus.targetPlanet); // Jupiter
+ */
+class SpaceShuttle {
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
     }
-}; */
+}
 
-// ShortHand
-const cycle = {
-    gear: 2,
-    setGear(newGear) {
-        this.gear = newGear;
-    }
-};
-
-cycle.setGear(3);
-console.log(cycle.gear); //3
+let zeus = new SpaceShuttle('Jupiter');
+console.log(zeus.targetPlanet); // Jupiter
