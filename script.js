@@ -1,13 +1,11 @@
-// Javascript: Destructuring Assignment - Arrays
+// Javascript: Destructuring Assignment - Rest Operator to Reassign Array
 console.clear();
 
-const [x, y, , z] = [1, 2, 3, 4, 5];
-console.log(x, y, z); // 1 2 4
-
-let a = 10, b = 20;
-(() => {
-    'use strict';
-    [a, b] = [b, a];
-})();
-console.log(a); // 20
-console.log(b); // 10
+const numbers = [1, 2, 3, 4, 5];
+function removeFirstTwo(list) {
+    const [, , ...arr] = list;
+    return arr;
+}
+const arr = removeFirstTwo(numbers);
+console.log(arr); // [3, 4, 5]
+console.log(numbers); // [1, 2, 3, 4, 5]
