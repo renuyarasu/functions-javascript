@@ -1,22 +1,15 @@
-// Javascript: Create Strings using Template Literals
+// Javascript: Write Concise object Literal Declarations Using Simple Fields
 console.clear();
 
-const result = {
-    success: ['success_01', 'success_02', 'success_03'],
-    failure: ['failure_01', 'failure_02', 'failure_03'],
-    skipped: ['skipped_01', 'skipped_02', 'skipped_03'],
-};
+/* const person = (name, age, gender) => {
+    return {
+        name: name,
+        age: age,
+        gender: gender,
+    };
+}; */
 
+const person = (name, age, gender) => ({ name, age, gender })
 
-function makeList(arr) {
-    const resultDisplayArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        resultDisplayArray.push(`<li>${arr[i]}</li>`)
-    }
+console.log(person('VedaGna', 5, 'Male')); // { name: 'VedaGna', age: 5, gender: 'Male' }
 
-    return resultDisplayArray;
-}
-
-const resultDisplayArray = makeList(result.success);
-
-console.log(resultDisplayArray);
