@@ -1,3 +1,14 @@
- num[0] = 2;
-    num[1] = 4;
-    num[2] = 6;
+
+function freezeObj() {
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch (ex) {
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI'
+}
+const PI = freezeObj();
+console.log(PI);

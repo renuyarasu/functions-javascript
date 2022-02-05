@@ -1,15 +1,19 @@
-// Javascript: Mutate an Array Declared with const
+// Javascript: Prevent Object Mutation
 console.clear();
 "use strict"
 
-const num = [6, 4, 2];
-function editInPlace() {
+function freezeObj() {
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+    // Object.freeze(MATH_CONSTANTS); // 3.14
 
-    // num = [2, 4, 6]
-    num[0] = 2;
-    num[1] = 4;
-    num[2] = 6;
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch (ex) {
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
 }
-
-let result = editInPlace();
-console.log(num);
+const PI = freezeObj();
+console.log(PI);
